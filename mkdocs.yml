@@ -1,5 +1,5 @@
 site_name: Piattaforma SAI - Documentazione Docenti
-side_url: https://matteoceregini.github.io/SAI/
+site_url: https://matteoceregini.github.io/SAI/
 theme:
   name: readthedocs
   navigation_depth: 1
