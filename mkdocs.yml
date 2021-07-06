@@ -1,5 +1,4 @@
 site_name: Piattaforma SAI - Documentazione Docenti
-site_url: https://www.piattaforma-sai.github.io
 theme:
   name: readthedocs
   navigation_depth: 1
