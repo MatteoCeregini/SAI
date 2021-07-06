@@ -1,0 +1,19 @@
+site_name: Piattaforma SAI - Documentazione Docenti
+site_url: https://www.piattaforma-sai.github.io
+theme:
+  name: readthedocs
+  navigation_depth: 1
+nav:
+  - index.md
+  - prima dell'esame:
+      - Struttura dell'esame: struttura_esame.md
+      - Introduzione: introduzione.md
+      - Creare l'esame: creare_un_esame.md
+      - Creare una categoria: creare_categorie.md
+      - Aggiungere una domanda: aggiungere_domande.md
+      - Scaricare l'esame: scaricare_simulazione_o_intero_esame.md
+  - durante l'esame:
+      - Monitorare l'esame: dashboard.md
+  - dopo l'esame:
+      - Scaricare gli esami degli studenti: scaricare_dopo_esame.md
+      - Statistiche dell'esame: statistiche_esame.md
