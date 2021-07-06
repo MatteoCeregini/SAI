@@ -1,5 +1,7 @@
 # Come creare un esame
 
+In seguito sono illustrati i passaggi per creare un nuovo esame.
+
 ## Se non hai fatto il login
 
 1. Effettua il [login](http://sai.di.unipi.it/login/teacher) con le tue credenziali di ateneo.
