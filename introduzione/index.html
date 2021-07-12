@@ -52,8 +52,6 @@
                 </ul>
                 <p class="caption"><span class="caption-text">prima dell'esame</span></p>
                 <ul class="current">
-                    <li class="toctree-l1"><a class="reference internal" href="../struttura_esame/">Struttura dell'esame</a>
-                    </li>
                     <li class="toctree-l1 current"><a class="reference internal current" href="./">Introduzione</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../creare_un_esame/">Creare l'esame</a>
@@ -115,16 +113,88 @@
             <div class="section">
               
                 <h1 id="introduzione">Introduzione</h1>
+<p>Un esame è formato da una serie di <strong><em>domande teoriche</em></strong> e <strong><em>esercizi di programmazione</em></strong>. Ciascuna domanda  fa parte di una <strong><em>categoria di domande</em></strong>. Analogamente, ciascun esercizio fa parte di una <strong><em>categoria di esercizi di programmazione</em></strong>.</p>
+<p>In generale, una <strong><em>categoria</em></strong> raggruppa un sottoinsieme di domande o esercizi che sono considerate simili o che trattano lo stesso argomento. Ecco alcuni esempi di possibili categorie:</p>
+<ul>
+<li>
+<p><em>Domande su P e NP</em>.</p>
+</li>
+<li>
+<p><em>Domande sul Master Theorem</em>.</p>
+</li>
+<li>
+<p><em>Esercizi di programmazione su grafi</em>.</p>
+</li>
+</ul>
+<p>Durante un esame, vengono visualizzate le domande (o esercizi di programmazione) relative ad una categoria prima di passare alla categoria successiva. Di default, l'ordine con cui
+sono visualizzate le categorie è causale, ma è possibile scegliere di mostrarle nell'ordine con cui sono state inserite durante la creazione dell'esame.</p>
+<p>È possibile decidere se mostrare allo studente durante l'esame tutte le domande teoriche (o esercizi di programmazione) relative ad una categoria oppure solo un sottoinsieme casuale.</p>
+<p>Inoltre, una <strong><em>categoria di domande teoriche</em></strong> può essere usata come <strong><em>domanda aggregata</em></strong>. Una domanda aggregata è un insieme di domande che condividono una introduzione comune. Ad esempio, potrei avere come introduzione un immagine di un grafo e poi delle domande relative al grafo dell'immagine.</p>
+<h1 id="preparazione-di-un-esame">Preparazione di un esame</h1>
 <p>In generale, la preparazione di un esame segue i seguenti passaggi:</p>
 <ol>
-<li>Crea un nuovo esame.</li>
-<li>Inserisci il nome, la data e ora di inizio e fine dell'esame.</li>
-<li>Aggiungi eventuali insegnanti riferenti.</li>
-<li>Crea le categorie di domande teoriche.</li>
-<li>Crea le domande teoriche, specificando per ciascuna domanda la categoria a cui appartiene.</li>
-<li>Crea le categorie di esercizi di programmazione.</li>
-<li>Crea gli esercizi di programmazione, specificando per ciascun esercizio la categoria a cui appartiene e i relativi testcase.</li>
+<li><a href="/SAI/creare_un_esame/">Crea un nuovo esame</a>.</li>
+<li>Inserisci il <a href="#nome-data-e-ora-di-inizio-e-di-fine">nome, la data e ora di inizio e fine dell'esame</a>.</li>
+<li>Aggiungi eventuali <a href="#docenti-referenti">docenti referenti</a>.</li>
+<li><a href="/SAI/creare_categorie/#creare-una-categoria-di-domande-teoriche">Crea le categorie di domande teoriche</a>.</li>
+<li><a href="/SAI/aggiungere_domande/#aggiungere-una-domanda-teorica">Crea le domande teoriche</a>, specificando per ciascuna domanda la categoria a cui appartiene.</li>
+<li><a href="/SAI/creare_categorie/#creare-una-categoria-di-esercizi-di-programmazione">Crea le categorie di esercizi di programmazione</a>.</li>
+<li><a href="/SAI/aggiungere_domande/#aggiungere-un-esercizio-di-programmazione">Crea gli esercizi di programmazione</a>, specificando per ciascun esercizio la categoria a cui appartiene e i relativi testcase.</li>
 </ol>
+<h1 id="struttura-di-un-esame">Struttura di un esame</h1>
+<p>In seguito sono descritti i vari componenti che formano un esame.</p>
+<h2 id="nome-data-e-ora-di-inizio-e-di-fine">Nome, data e ora di inizio e di fine</h2>
+<p>Ogni esame deve avere un nome, una data e ora di inizio e una data e ora di fine. L'esame inizia automaticamente alla data e ora di inizio, ma 
+<em>non</em> termina in maniera automatica: è quindi compito del docente <em>chiudere</em> l'esame.</p>
+<h2 id="codice-accesso">Codice accesso</h2>
+<p>Ogni esame ha associato un codice di accesso univoco, che viene generato in automatico dopo la creazione dell'esame. Questo codice deve essere comunicato agli studenti per poterli fare partecipare all'esame.</p>
+<h2 id="domande-teoriche-esercizi-di-programmazione-e-categorie">Domande teoriche, esercizi di programmazione e categorie</h2>
+<h3 id="domande-teoriche">Domande teoriche</h3>
+<p>Esistono tre tipologie di domande teoriche:</p>
+<ul>
+<li><strong><em>Domanda aperte</em></strong>: lo studente potrà rispondere liberamente alla domanda.</li>
+<li><strong><em>Domande a scelta multipla</em></strong>: lo studente per rispondere ad una domanda potrà selezionare una o più risposte da un insieme predefinito di risposte possibili definito dal docente.</li>
+<li><strong><em>Domande aggregate</em></strong>: lo studente potrà rispondere a una serie di domande che condividono una introduzione comune. Queste domande devono appartene alla stessa categoria che viene usata per creare la domanda aggregata.</li>
+</ul>
+<h3 id="categoria-di-domande-teoriche">Categoria di domande teoriche</h3>
+<p>Una <strong><em>categoria di domande teoriche</em></strong> è caratterizzata da:</p>
+<ul>
+<li>Il <em>nome della categoria</em>.</li>
+<li>Se la categoria deve essere è <em>randomizzata</em> oppure no:<ul>
+<li><strong><em>Se la randomizzata è attiva</em></strong>, si deve specificare Il <em>numero di domande della categoria che devono essere mostrate agli studenti durante l'esame</em>. Inserendo un numero minore del numero effettivo di domande della categoria, durante l'esame ad ogni studente verrà mostrato un sottoinsieme di domande scelte <em>casualmente</em> tra quelle della categoria.</li>
+<li><strong><em>Se la randomizzazione non è attiva</em></strong>, durante l'esame ad ogni studente verranno mostrate tutte le domande di questa categoria, nell'ordine con cui sono state inserite.</li>
+</ul>
+</li>
+<li>Se la categoria deve essere usata come <strong><em>domanda aggregata</em></strong>. </li>
+</ul>
+<h3 id="esercizi-di-programmazione">Esercizi di programmazione</h3>
+<p>Un esercizio di programmazione è formato da:</p>
+<ul>
+<li>Il testo dell'esercizio.</li>
+<li>Del codice iniziale, opzionale, fornito dal docente agli studenti.</li>
+<li>Un insieme di <strong><em>testcase</em></strong> con cui gli studenti possono testare la correttezza del loro programmi.</li>
+<li>Il numero minimo di testcase che il programma dello studente deve superare per poter essere consegnato.</li>
+</ul>
+<h3 id="testcase">Testcase</h3>
+<p>I testcase devono essere scritti utilizzando il modulo <a href="https://nodejs.org/api/assert.html">assert</a> di NodeJS. Esistono due tipologie di testcase:</p>
+<ul>
+<li><strong><em>Testcase pubblici</em></strong>: sono visualizzabili dagli studenti.</li>
+<li><strong><em>Testcase segreti</em></strong>: sono visualizzabili solamente dai docenti e non dagli studenti.</li>
+</ul>
+<h3 id="categoria-di-esercizi-di-programmazione">Categoria di esercizi di programmazione</h3>
+<p>Una <strong><em>categoria di esercizi di programmazione</em></strong> è caratterizzata da:</p>
+<ul>
+<li>Il <em>nome della categoria</em>.</li>
+<li>Se la categoria deve essere è <em>randomizzata</em> oppure no:<ul>
+<li><strong><em>Se la randomizzata è attiva</em></strong>, si deve specificare Il <em>numero di esercizi di programmazione della categoria che devono essere mostrate agli studenti durante l'esame</em>. Inserendo un numero minore del numero effettivo di esercizi della categoria, durante l'esame ad ogni studente verrà mostrato un sottoinsieme di esercizi di programmazione scelte <em>casualmente</em> tra quelle della categoria.</li>
+<li><strong><em>Se la randomizzazione non è attiva</em></strong>, durante l'esame ad ogni studente verranno mostrate tutte gli esercizi di programmazione di questa categoria, nell'ordine con cui sono stati inseriti.</li>
+</ul>
+</li>
+</ul>
+<h2 id="docenti-referenti">Docenti referenti</h2>
+<p>È possibile aggiungere dei docenti referenti ad un esame. In generale, i docenti referenti hanno le stesse capacità del creatore dell'esame. 
+Ad esempio, i docenti referenti possono accedere all'esame e modificarlo, monitorare l'esame, chiudere le
+consegne una volta iniziato l'esame e scaricare gli esami degli studenti che hanno partecipato all'esame.</p>
               
             </div>
           </div>
@@ -135,7 +205,7 @@
         <a href="../creare_un_esame/" class="btn btn-neutral float-right" title="Creare l'esame">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../struttura_esame/" class="btn btn-neutral" title="Struttura dell'esame"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href=".." class="btn btn-neutral" title="Accedere alla Piattaforma"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -161,7 +231,7 @@
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../struttura_esame/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href=".." style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
       <span><a href="../creare_un_esame/" style="color: #fcfcfc">Next &raquo;</a></span>
