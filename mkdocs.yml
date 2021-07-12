@@ -6,7 +6,6 @@ theme:
 nav:
   - index.md
   - prima dell'esame:
-      - Struttura dell'esame: struttura_esame.md
       - Introduzione: introduzione.md
       - Creare l'esame: creare_un_esame.md
       - Creare una categoria: creare_categorie.md

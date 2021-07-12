@@ -25,6 +25,7 @@ spuntando la checkbox *Accetta risposte multiple*.
 
 # Aggiungere un esercizio di programmazione
 
+
 * Entra nell'editor dell'esame a cui vuoi aggiungere un esercizio di programmazione.
 * Per aggiungere un nuovo esercizio, clicca il pulsante ***Aggiungi*** accanto a *Esercizi di programmazione JS* e comparirà l'editor del nuovo esercizio.
 
