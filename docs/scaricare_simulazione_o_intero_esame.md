@@ -6,12 +6,18 @@ i criteri specificati per ciscuna categoria nell'editor dell'esame. Una simulazi
 
 Un ***l'esame completo*** è un *file pdf* contenente l'intera lista di tutte le domande teoriche e esercizi di programmazione che compongono l'esame.
 
-## Scaricare una simulazione d'esame o l'esame completo
-
+## Come scaricare una simulazione d'esame o l'esame completo
+### Se non hai fatto il login
 * Effettua il [login](http://sai.di.unipi.it/login/teacher) con le tue credenziali di ateneo.
 * Clicca il pulsante ***Visualizza e modifica esami*** e comparirà la lista degli esami che hai creato e di cui sei referente.
 
 ![](img\visualizza_e_modifica_esami.png)
+
+* Sposta il cursore sul pulsante ***Simulazione*** dell'esame di cui intendi scaricare una simulazione o l'esame completo, quindi clicca su ***Scarica una possibile simulazione*** oppure ***Scarica esame completo***.
+
+![](img\scarica_simulazione.png)
+
+### Se sei nella pagina *Lista esami*
 
 * Sposta il cursore sul pulsante ***Simulazione*** dell'esame di cui intendi scaricare una simulazione o l'esame completo, quindi clicca su ***Scarica una possibile simulazione*** oppure ***Scarica esame completo***.
 

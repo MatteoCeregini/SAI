@@ -10,10 +10,18 @@ Gli esami degli studenti sono scaricabili in due formati diversi:
 
 ## Come scaricare gli esami degli studenti
 
+### Se non hai fatto il login
+
 * Effettua il [login](http://sai.di.unipi.it/login/teacher) con le tue credenziali di ateneo.
 * Clicca il pulsante ***Visualizza e modifica esami*** e comparirà la lista degli esami che hai creato e di cui sei referente.
 
 ![](img\visualizza_e_modifica_esami.png)
+
+* Sposta il cursore sul pulsante ***Risultati*** dell'esame di cui intendi scaricare gli esami degli studenti, quindi clicca su ***Scarica come CSV*** oppure ***Scarica come PDF***.
+
+![](img\scarica_esami_studenti.png)
+
+### Se sei nella pagina *Lista esami*
 
 * Sposta il cursore sul pulsante ***Risultati*** dell'esame di cui intendi scaricare gli esami degli studenti, quindi clicca su ***Scarica come CSV*** oppure ***Scarica come PDF***.
 
