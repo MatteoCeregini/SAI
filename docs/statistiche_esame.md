@@ -25,7 +25,3 @@ Dopo che un esame è finito, è possibile visualizzare delle statistiche relativ
 * Clicca il pulsante ***Statistiche*** dell'esame di cui vuoi visualizzare le statistiche.
 
 ![](img\pulsante_statistiche.png)
-
-## Prova
-
-![](img\screenshot_statistiche.png)
